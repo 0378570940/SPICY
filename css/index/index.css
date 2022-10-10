@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header .header-top {
+  height: 45px;
+  width: 100%;
+}
+.header .header-top .container .row .col-md-6 ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.header .header-top .container .row .col-md-6 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-icon:hover {
+  background-color: rgb(66, 66, 240);
+}
+.header .header-icons:hover {
+  background-color: rgb(179, 38, 28);
+}
+.header .header-middle {
+  height: 80px;
+}
+.header .header-middle .container {
+  border-bottom: 2px solid gray;
+}
+.header .header-middle .container .row .col-md-4 .logo a img {
+  width: 100px;
+  padding-top: 10px;
+}
+.header .header-middle .col-md-8 .shop-menu ul {
+  list-style-type: none;
+}
+.header .header-middle .col-md-8 .shop-menu ul li {
+  padding: 25px 20px 0 0;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a:hover {
+  color: #fe980f;
+}
+.header .header-bottom {
+  height: 60px;
+}
+.header .header-bottom ul li a:hover {
+  color: #fe980f;
+}
+
+.navbar-expand-lg .container-fluid a {
+  margin-left: 20px;
+}
+.navbar-expand-lg .container-fluid .collapse {
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=index.css.map */
