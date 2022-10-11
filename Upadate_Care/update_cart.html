@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPICY</title>
-    <link rel="stylesheet" href="./css/index/index.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/updatee_cart.css/update.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -130,94 +135,22 @@
         </div>
         <!-- end -->
 
-        <!-- sidenav -->
-        <div class="sideNav">
-            <section id="sideNav">
-                <nav>
-                    <ul>
-                        <li><a href="#banner">Home</a></li>
-                        <li><a href="#feature">Features</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#testimonial">Testimonial</a></li>
-                        <li><a href="#footer">Meet Us</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <div id="menuBtn">
-                <img id="menu" src="./img/VisualEditor_-_Icon_-_Menu.svg.png" alt="">
-            </div>
-
-            <section id="search">
-                <!-- <nav class="navbar bg-light"> -->
-                <div class="container-fluid">
-                    <h5>Tìm kiếm</h5>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
-                    </form>
-                </div>
-                <!-- </nav> -->
-            </section>
-            <div id="menuBtns">
-                <img id="menu_right" src="./img/logosearch-removebg-preview.png" alt="">
-            </div>
-        </div>
-        <!-- end -->
-
         <!-- main -->
-        <div class="main">
-            <div id="main_cart"></div>
+        <h3>Thêm Sản Phẩm</h3>
+        <div class="mains">
+            <div id="main_text">
+                <div class="main-input">
+                    <input id="imgAdd" type="text" placeholder="New img product">
+                    <input id="nameAdd" type="text" placeholder="New name product">
+                    <input id="priceAdd" type="text" placeholder="New price product">
+                    <button class="addProduct" onclick="createProduct()">AddProduct</button>
+                </div>
+            </div>
+            <div id="main_carts"></div>
         </div>
-        <!-- end -->
+
 </body>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-
-
-<script>
-    // left
-    let menuBtn = document.getElementById('menuBtn');
-    let sideNav = document.getElementById('sideNav');
-    let menu = document.getElementById('menu');
-    sideNav.style.left = "-250px";
-    menuBtn.onclick = function () {
-        if (sideNav.style.left == "-250px") {
-            sideNav.style.left = "0";
-            menu.src = "./img/OOjs_UI_icon_close-ltr.svg.png"
-        } else {
-            sideNav.style.left = "-250px";
-            menu.src = "./img/VisualEditor_-_Icon_-_Menu.svg.png"
-        }
-    }
-
-    // All animations will take exactly 1000ms
-    // var scrollss = new SmoothScroll('a[href*="#"]', {
-    //     speed: 1000,
-    //     speedAsDuration: true
-    // });
-
-    //right
-    let menuBtns = document.getElementById('menuBtns');
-    let sideNavs = document.getElementById('search');
-    let menus = document.getElementById('menu_right');
-    sideNavs.style.right = "-300px";
-    menuBtns.onclick = function () {
-        if (sideNavs.style.right == "-300px") {
-            sideNavs.style.right = "0";
-            menus.src = "./img/OOjs_UI_icon_close-ltr.svg.png"
-        } else {
-            sideNavs.style.right = "-300px";
-            menus.src = "./img/logosearch-removebg-preview.png"
-        }
-    }
-
-    // All animations will take exactly 1000ms
-    var scrolls = new SmoothScroll('form', {
-        speed: 1000,
-        speedAsDuration: true
-    });
-</script>
+<script src="../OOP/product.js"></script>
+<script src="../js/update_cart/update_cart.js"></script>
 
 </html>
