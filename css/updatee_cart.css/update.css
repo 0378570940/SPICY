@@ -82,7 +82,7 @@ body {
 }
 .slider #carouselExampleDark .slider-top .container .row .carousel-item img {
   width: 500px;
-  height: 600px;
+  height: 500px;
 }
 @media screen and (max-width: 576px) {
   .slider #carouselExampleDark .slider-top .container .row .carousel-item img {
@@ -92,20 +92,20 @@ body {
 }
 .slider #carouselExampleDark .slider-top .container .row .carousel-item .slider2 {
   position: relative;
-  top: -60px;
+  top: 10%;
 }
 .slider #carouselExampleDark .slider-top .container .row .carousel-item .slider3 {
   position: relative;
-  top: -120px;
+  top: 10%;
   width: 500px;
-  height: 700px;
+  height: 500px;
 }
 
 .navigation {
   box-sizing: border-box;
 }
 .navigation .navigation-left {
-  height: 90%;
+  height: 95%;
   width: 100%;
   background: linear-gradient(to right, #33624d, #799d63) !important;
   position: absolute;
@@ -150,8 +150,10 @@ h3 {
 
 .mains {
   margin-top: 50px;
+  width: 100%;
 }
 .mains #main_text {
+  width: 20%;
   margin-left: 10px;
   float: left;
   border: 0.2px solid gray;
@@ -171,9 +173,13 @@ h3 {
   margin: 10px;
 }
 .mains #main_carts {
+  width: 78%;
   float: right;
+}
+.mains #main_carts .main {
   display: grid;
-  grid-template-columns: auto, auto, auto;
+  grid-template-columns: auto auto auto;
+  gap: 50px 100px;
 }
 .mains #main_carts .main .main_title {
   border: 1px solid gray;
@@ -188,14 +194,17 @@ h3 {
   text-align: center;
 }
 .mains #main_carts .main .main_title b {
-  margin-left: 80px;
+  margin-left: 90px;
+}
+.mains #main_carts .main .main_title .main_desc {
+  float: left;
 }
 .mains #main_carts .main .main_title .main_desc a {
   position: relative;
   width: 100px;
   text-decoration: none;
   display: inline-block;
-  margin: 0 60px;
+  margin: 0 10px;
   padding: 10px 35px;
   color: black;
   border: 0.5px solid #ffd700;
@@ -217,4 +226,60 @@ h3 {
 }
 .mains #main_carts .main .main_title .main_desc a:hover {
   color: white;
+}
+.mains #main_carts .main .main_title .main_descs {
+  float: right;
+}
+.mains #main_carts .main .main_title .main_descs a {
+  position: relative;
+  width: 100px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 25px;
+  color: black;
+  border: 0.5px solid #ffd700;
+  z-index: 1;
+  transition: color 0.5s;
+}
+.mains #main_carts .main .main_title .main_descs a span {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #33624d, #799d63);
+  z-index: -1;
+  transition: 0.5s;
+}
+.mains #main_carts .main .main_title .main_descs a:hover span {
+  width: 100%;
+}
+.mains #main_carts .main .main_title .main_descs a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 740px) {
+  h3 {
+    margin-top: 150px !important;
+  }
+  .mains #main_text {
+    display: none;
+  }
+  .mains #main_carts .main {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1200px) {
+  .mains #main_text {
+    display: none;
+  }
+  .mains #main_carts {
+    margin-right: 100px;
+  }
+  .mains #main_carts .main {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }/*# sourceMappingURL=update.css.map */

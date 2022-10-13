@@ -120,7 +120,7 @@ body {
             }
             img {
               width: 500px;
-              height: 600px;
+              height: 500px;
             }
             @media screen and (max-width: $small) {
               img {
@@ -130,13 +130,13 @@ body {
             }
             .slider2 {
               position: relative;
-              top: -60px;
+              top: 10%;
             }
             .slider3 {
               position: relative;
-              top: -120px;
+              top: 10%;
               width: 500px;
-              height: 700px;
+              height: 500px;
             }
           }
         }
@@ -149,7 +149,7 @@ body {
   // height: 100vh;
   box-sizing: border-box;
   .navigation-left {
-    height: 90%;
+    height: 95%;
     width: 100%;
     background: linear-gradient(to right, #33624d, #799d63) !important;
     position: absolute;
@@ -196,7 +196,9 @@ h3 {
 }
 .mains {
   margin-top: 50px;
+  width: 100%;
   #main_text {
+    width: 20%;
     margin-left: 10px;
     float: left;
     border: 0.2px solid gray;
@@ -216,11 +218,14 @@ h3 {
     }
   }
   #main_carts {
+    width: 78%;
     float: right;
-    display: grid;
-    grid-template-columns: auto, auto, auto;
     .main {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 50px 100px;
       .main_title {
+        // margin-bottom: 40px;
         border: 1px solid gray;
         width: 250px;
         height: 380px;
@@ -232,15 +237,16 @@ h3 {
           text-align: center;
         }
         b {
-          margin-left: 80px;
+          margin-left: 90px;
         }
         .main_desc {
+          float: left;
           a {
             position: relative;
             width: 100px;
             text-decoration: none;
             display: inline-block;
-            margin: 0 60px;
+            margin: 0 10px;
             padding: 10px 35px;
             color: black;
             border: 0.5px solid $primary-color;
@@ -264,6 +270,75 @@ h3 {
         .main_desc a:hover {
           color: white;
         }
+        .main_descs {
+          float: right;
+          a {
+            position: relative;
+            width: 100px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 25px;
+            color: black;
+            border: 0.5px solid $primary-color;
+            z-index: 1;
+            transition: color 0.5s;
+            span {
+              width: 0%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: $secondary-color;
+              z-index: -1;
+              transition: 0.5s;
+            }
+          }
+        }
+        .main_descs a:hover span {
+          width: 100%;
+        }
+        .main_descs a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// and (max-width: 375px)
+@media screen and (max-width: 375px) {
+}
+
+// Mobile: width < 740px
+@media screen and (max-width: 740px) {
+  h3 {
+    margin-top: 150px !important;
+  }
+  .mains {
+    #main_text {
+      display: none;
+    }
+    #main_carts {
+      .main {
+        display: grid;
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
+
+// Teblet: width >= 740px and width < 1024px
+@media screen and (min-width: 740px) and (max-width: 1200px) {
+  .mains {
+    #main_text {
+      display: none;
+    }
+    #main_carts {
+      margin-right: 100px;
+      .main {
+        display: grid;
+        grid-template-columns: auto auto;
       }
     }
   }
