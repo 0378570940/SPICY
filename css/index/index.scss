@@ -124,6 +124,7 @@ body {
             }
             @media screen and (max-width: $small) {
               img {
+                width: 350px;
                 opacity: 0.7;
                 z-index: -2;
               }
@@ -285,6 +286,7 @@ h3 {
   // display: flex;
   // justify-content: space-between;
   #main_text {
+    margin-top: 30px;
     float: left;
     width: 20%;
     border: 0.1px solid gray;
@@ -295,6 +297,93 @@ h3 {
     }
     p {
       margin: 20px 10px;
+    }
+  }
+  #main_cartt {
+    width: 78%;
+    float: right;
+    .main {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 50px 100px;
+      .main_title {
+        // margin-bottom: 40px;
+        border: 1px solid gray;
+        width: 250px;
+        height: 380px;
+        img {
+          width: 245px;
+          height: 250px;
+        }
+        p {
+          text-align: center;
+        }
+        b {
+          margin-left: 90px;
+        }
+        .main_desc {
+          float: left;
+          a {
+            position: relative;
+            width: 100px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 70px;
+            padding: 10px 35px;
+            color: black;
+            border: 0.5px solid $primary-color;
+            z-index: 1;
+            transition: color 0.5s;
+            span {
+              width: 0%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: $secondary-color;
+              z-index: -1;
+              transition: 0.5s;
+            }
+          }
+        }
+        .main_desc a:hover span {
+          width: 100%;
+        }
+        .main_desc a:hover {
+          color: white;
+        }
+        .main_descs {
+          float: right;
+          a {
+            position: relative;
+            width: 100px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 25px;
+            color: black;
+            border: 0.5px solid $primary-color;
+            z-index: 1;
+            transition: color 0.5s;
+            span {
+              width: 0%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: $secondary-color;
+              z-index: -1;
+              transition: 0.5s;
+            }
+          }
+        }
+        .main_descs a:hover span {
+          width: 100%;
+        }
+        .main_descs a:hover {
+          color: white;
+        }
+      }
     }
   }
 }
@@ -316,8 +405,38 @@ h3 {
 
 // Mobile: width < 740px
 @media screen and (max-width: 740px) {
+  .text-main {
+    margin-top: 150px;
+  }
+  .main {
+    #main_text {
+      display: none;
+    }
+    #main_cartt {
+      margin-right: 20px;
+      .main {
+        display: grid;
+        grid-template-columns: auto;
+      }
+    }
+  }
 }
 
 // Teblet: width >= 740px and width < 1024px
 @media screen and (min-width: 740px) and (max-width: 1200px) {
+  .text-main {
+    // margin-top: 100px;
+  }
+  .main {
+    #main_text {
+      display: none;
+    }
+    #main_cartt {
+      margin-right: 80px;
+      .main {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+    }
+  }
 }

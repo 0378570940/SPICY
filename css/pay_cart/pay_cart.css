@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header .header-input {
+  width: 58%;
+  padding: 30px;
+}
+.header .header-text {
+  width: 38%;
+  background-color: #fafafa;
+  padding: 20px;
+}
+.header .header-text #results .result-titles {
+  margin: 10px;
+}
+.header .header-text #results .result-titles .result-text {
+  float: left;
+  border: 0.1px dotted gray;
+  width: 120px;
+  height: 120px;
+}
+.header .header-text #results .result-titles .result-text .spinner-border {
+  width: 30px;
+  height: 30px;
+  margin: 40px 40px;
+}
+.header .header-text #results .result-titles p {
+  float: left;
+  margin-left: 20px;
+}
+.header .header-text #results .result-titles h6 {
+  float: right;
+  margin-right: 203px;
+}
+.header .header-text #results .result-titles .buttons {
+  width: 30px;
+  height: 30px;
+}
+.header .header-text #results .result-titles input {
+  margin-left: 10px;
+  width: 40px;
+  text-align: center;
+}
+.header .header-text #results .result-titles .bi {
+  margin-left: 20px;
+}
+.header .header-text #results .result-titles .bi:hover {
+  color: red;
+}
+.header .header-text .row {
+  margin-top: 50px;
+  border-top: 0.1px solid gray;
+}
+.header .header-text .row .col-auto input {
+  width: 300px;
+  height: 50px;
+}
+.header .header-text .row .col-auto button {
+  width: 150px;
+  height: 50px;
+}
+.header .header-text .header-text-fee {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1px solid gray;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.header .header-text .header-text-price {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1px solid gray;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.header .header-text a {
+  border: 0.5px solid;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  margin-left: 120px;
+  margin-top: 50px;
+}/*# sourceMappingURL=pay_cart.css.map */

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../css/updatee_cart.css/update.css">
+    <link rel="stylesheet" href="./css/updatee_cart.css/update.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
@@ -76,7 +76,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6" style="float: left;">
-                                        <img src="../img/caysuongrong-removebg-preview.png"
+                                        <img src="./img/caysuongrong-removebg-preview.png"
                                             class="girl img-responsive slider1" alt="" />
                                         <!-- <img src="images/home/pricing.png" class="pricing" alt="" /> -->
                                     </div>
@@ -92,7 +92,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6" style="float: left;">
-                                        <img src="../img/2-cay-hanh-phuc-chau-da-mai-thap-removebg-preview.png"
+                                        <img src="./img/2-cay-hanh-phuc-chau-da-mai-thap-removebg-preview.png"
                                             class="girl img-responsive slider2" alt="" />
                                         <!-- <img src="images/home/pricing.png" class="pricing" alt="" /> -->
                                     </div>
@@ -108,7 +108,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6" style="float: left;">
-                                        <img src="../img/Cay_luoi_ho-removebg-preview.png"
+                                        <img src="./img/Cay_luoi_ho-removebg-preview.png"
                                             class="girl img-responsive slider3" alt="" />
                                         <!-- <img src="images/home/pricing.png" class="pricing" alt="" /> -->
                                     </div>
@@ -140,17 +140,29 @@
         <div class="mains">
             <div id="main_text">
                 <div class="main-input">
-                    <input id="imgAdd" type="text" placeholder="New img product">
+                    <input id="imgAdd" type="file" id="file-upload" placeholder="New img product">
                     <input id="nameAdd" type="text" placeholder="New name product">
                     <input id="priceAdd" type="text" placeholder="New price product">
                     <button class="addProduct" onclick="createProduct()">AddProduct</button>
+                </div>
+                <div class="main-inputs">
+                    <input id="imgUpdate" type="text" placeholder="New img product">
+                    <input id="nameUpdate" type="text" placeholder="New name product">
+                    <input id="priceUpdate" type="text" placeholder="New price product">
+                    <button class="addProduct" onclick="updateProduct()">updateProduct</button>
                 </div>
             </div>
             <div id="main_carts"></div>
         </div>
 
 </body>
-<script src="../OOP/product.js"></script>
-<script src="../js/update_cart/update_cart.js"></script>
+<script src="./OOP/product.js"></script>
+<script src="./js/update_index/update_index.js"></script>
+<script src="./js/update_cart/update_cart.js"></script>
+
+
+<script>
+
+</script>
 
 </html>

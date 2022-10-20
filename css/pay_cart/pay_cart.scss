@@ -1,0 +1,111 @@
+$small: 576px;
+$primary-color: #ffd700;
+$boxshado: rgba(0, 0, 0, 0.25) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
+$secondary-color: linear-gradient(to top, #33624d, #799d63);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+
+  .header-input {
+    width: 58%;
+    padding: 30px;
+  }
+  .header-text {
+    width: 38%;
+    background-color: #fafafa;
+    padding: 20px;
+    #results {
+      .result-titles {
+        margin: 10px;
+        .result-text {
+          float: left;
+          border: 0.1px dotted gray;
+          width: 120px;
+          height: 120px;
+          .spinner-border {
+            width: 30px;
+            height: 30px;
+            margin: 40px 40px;
+          }
+        }
+        p {
+          float: left;
+          margin-left: 20px;
+        }
+        h6 {
+          float: right;
+          margin-right: 203px;
+        }
+
+        .buttons {
+          width: 30px;
+          height: 30px;
+        }
+        input {
+          margin-left: 10px;
+          width: 40px;
+          text-align: center;
+        }
+        .bi {
+          margin-left: 20px;
+        }
+        .bi:hover {
+          color: red;
+        }
+      }
+    }
+    .row {
+      margin-top: 50px;
+      border-top: 0.1px solid gray;
+      .col-auto {
+        input {
+          width: 300px;
+          height: 50px;
+        }
+      }
+      .col-auto {
+        button {
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
+    .header-text-fee {
+      display: flex;
+      justify-content: space-between;
+      border-top: 0.1px solid gray;
+      margin-top: 20px;
+      padding: 20px 0;
+    }
+    .header-text-price {
+      display: flex;
+      justify-content: space-between;
+      border-top: 0.1px solid gray;
+      margin-top: 20px;
+      padding: 20px 0;
+    }
+    a {
+      border: 0.5px solid;
+      padding: 20px 40px;
+      text-decoration: none;
+      color: white;
+      background-color: blue;
+      margin-left: 120px;
+      margin-top: 50px;
+    }
+  }
+}

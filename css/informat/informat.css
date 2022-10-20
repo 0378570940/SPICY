@@ -1,0 +1,345 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header .header-top {
+  height: 45px;
+  width: 100%;
+}
+.header .header-top .container .row .col-md-6 ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.header .header-top .container .row .col-md-6 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-icon:hover {
+  background-color: rgb(66, 66, 240);
+}
+.header .header-icons:hover {
+  background-color: rgb(179, 38, 28);
+}
+.header .header-middle {
+  height: 80px;
+}
+.header .header-middle .container {
+  border-bottom: 2px solid gray;
+}
+.header .header-middle .container .row .col-md-4 .logo a img {
+  width: 100px;
+  padding-top: 10px;
+}
+.header .header-middle .col-md-8 .shop-menu ul {
+  list-style-type: none;
+}
+.header .header-middle .col-md-8 .shop-menu ul li {
+  padding: 25px 20px 0 0;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a:hover {
+  color: #fe980f;
+}
+.header .header-bottom {
+  height: 60px;
+}
+.header .header-bottom ul li a:hover {
+  color: #fe980f;
+}
+
+.sideNav #sideNav {
+  position: fixed;
+  z-index: 2;
+  top: 3%;
+  left: 3%;
+}
+.sideNav #menuBtn {
+  width: 50px;
+  height: 50px;
+  background: #009688;
+  text-align: center;
+  position: fixed;
+  top: 3%;
+  left: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+.sideNav #menuBtn img {
+  width: 30px;
+  margin-top: 10px;
+}
+.sideNav #search {
+  width: 450px;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to top, #799d63, #33624d);
+  z-index: 2;
+  transition: right 0.5s;
+}
+.sideNav #search .container-fluid {
+  margin-top: 30px;
+}
+.sideNav #search .container-fluid .result-title {
+  margin: 10px;
+}
+.sideNav #search .container-fluid .result-title .result-text {
+  float: left;
+  border: 0.1px dotted gray;
+  width: 120px;
+  height: 120px;
+}
+.sideNav #search .container-fluid .result-title .result-text .spinner-border {
+  width: 30px;
+  height: 30px;
+  margin: 40px 40px;
+}
+.sideNav #search .container-fluid .result-title p {
+  float: left;
+  margin-left: 20px;
+}
+.sideNav #search .container-fluid .result-title h6 {
+  float: right;
+  margin-right: 203px;
+}
+.sideNav #search .container-fluid .result-title .buttons {
+  width: 30px;
+  height: 30px;
+}
+.sideNav #search .container-fluid .result-title input {
+  margin-left: 10px;
+  width: 40px;
+  text-align: center;
+}
+.sideNav #search .container-fluid .result-title .bi {
+  margin-left: 20px;
+}
+.sideNav #search .container-fluid .result-title .bi:hover {
+  color: red;
+}
+.sideNav #search .container-fluid h5 {
+  color: white;
+  margin-left: 10px;
+}
+.sideNav #search .container-fluid #result {
+  margin-top: 40px;
+  border-top: 2px dotted gray;
+}
+.sideNav #search .container-fluid .search-text {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid rgb(0, 0, 0);
+  margin-top: 100px;
+}
+.sideNav #search .container-fluid .search-text #price {
+  font-size: 20px;
+}
+.sideNav #search .container-fluid button {
+  width: 400px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+.sideNav #menuBtns {
+  width: 50px;
+  height: 50px;
+  background: #009688;
+  text-align: center;
+  position: fixed;
+  top: 3%;
+  right: 20px;
+  border-radius: 3px;
+  z-index: 4;
+  cursor: pointer;
+}
+.sideNav #menuBtns img {
+  width: 45px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.page .bi {
+  margin: 0px 110px;
+}
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.main .main-img {
+  width: 15%;
+}
+.main .main-img ul {
+  list-style: none;
+  margin-left: 50px;
+}
+.main .main-img ul li {
+  margin: 10px;
+  border: 0.1px solid black;
+  width: 90px;
+}
+.main .main-img ul li img {
+  margin: 3px;
+  width: 80px;
+  height: 70px;
+}
+.main .main-imgs {
+  width: 55%;
+  margin: 10px;
+}
+.main .main-imgs .carousel {
+  height: 30%;
+}
+.main .main-imgs .carousel .carousel-inner .carousel-item img {
+  border: 0.1px solid black;
+  height: 30% !important;
+  width: 90%;
+}
+.main .main-imgs .carousel .carousel-control-prev .carousel-control-prev-icon {
+  margin-top: 500px;
+}
+.main .main-imgs .carousel .carousel-control-next .carousel-control-next-icon {
+  margin-top: 500px;
+}
+.main #main-text {
+  width: 30%;
+}
+.main #main-text .main .mains .mains_img {
+  border: 0.1px solid gray;
+  width: 100px;
+  height: 100px;
+}
+.main #main-text .main .mains h3 {
+  margin-top: -40px;
+}
+.main #main-text .main .mains h2 {
+  border-top: 0.1px dotted gray;
+  margin-top: 20px;
+}
+.main #main-text .main .mains .buttons {
+  width: 30px;
+  margin-top: 20px;
+}
+.main #main-text .main .mains input {
+  margin-top: 20px;
+  width: 50px;
+  margin: 5px;
+  text-align: center;
+}
+.main #main-text .main .mains .button-text {
+  margin: 25px 3px;
+  width: 175px;
+  height: 40px;
+  background: black;
+  color: white;
+}
+.main #main-text .main .mains .main-a {
+  padding: 30px 150px;
+  text-decoration: none;
+}
+
+.information {
+  border: 0.2px solid gray;
+  height: 280px;
+  width: 380px;
+  position: absolute;
+  top: 70%;
+  left: 71%;
+}
+.information h3 {
+  background: black;
+  color: white;
+}
+
+.information-text {
+  margin-top: 30px;
+  margin-left: 18%;
+}
+.information-text h2 {
+  margin-left: -3%;
+}
+.information-text span {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 740px) {
+  .header .row .header-text {
+    text-align: center;
+  }
+  .header .row .header-img {
+    display: none;
+  }
+  .page {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+  }
+  .main .main-img {
+    display: none;
+  }
+  .main .main-imgs {
+    width: 100%;
+  }
+  .main #main-text {
+    width: 100%;
+    position: absolute;
+    top: 85%;
+  }
+  .main #main-text .main h3 {
+    font-size: 14px;
+  }
+  .information {
+    position: absolute;
+    top: 250%;
+    left: 1%;
+    width: 100%;
+  }
+  .information-text {
+    position: absolute;
+    top: 128%;
+    left: -15%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1200px) {
+  .header .row .header-text {
+    text-align: center;
+  }
+  .main .main-img {
+    display: none;
+  }
+  .main .main-imgs {
+    width: 100%;
+  }
+  .main #main-text {
+    width: 100%;
+  }
+  .main #main-text .main .main-a {
+    margin-left: -40px;
+  }
+  .information {
+    position: absolute;
+    top: 40%;
+    left: 52%;
+  }
+  .information-text {
+    width: 100%;
+    margin-left: 30px;
+  }
+}/*# sourceMappingURL=informat.css.map */

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/informat/informat.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- js -->
+
+    <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- header top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 header-text">
+                        <ul class="nav " style="float: left;">
+                            <li><a href="#"><i class="bi bi-telephone-fill"></i> +03 78 570 940</a></li>
+                            <li><a href="#"><i class="bi bi-envelope-fill"></i> anhviet@gmai.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 header-img">
+                        <ul class="nav" style="float: right;">
+                            <li class="header-icon"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-dribbble"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-google-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- sidenav -->
+        <div class="sideNav">
+
+            <section id="sideNav">
+                <h2>VJE</h2>
+            </section>
+
+            <section id="search">
+                <div class="container-fluid">
+                    <h5>Cart</h5>
+                    <div id="result"></div>
+                    <div class="search-text">
+                        <h4>Tổng Tiền Tạm Tính: </h4>
+                        <p id="price">đ</p>
+                    </div>
+                    <button>TIẾN HÀNH ĐẶT HÀNG</button>
+                </div>
+            </section>
+            <div id="menuBtns">
+                <img id="menu_right" src="../img/cart-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- trang chủ -->
+        <div class="page">
+            <i class="bi bi-house-fill">Trang chủ</i>
+        </div>
+
+        <div class="main">
+            <div class="main-img">
+                <ul class="">
+                    <li><img src="../img/caybachtuyetmai1.png" alt="" onclick="chengeImage('one')" id="one">
+                    </li>
+                    <li><img src="../img/caybachtuyetmai2.png" alt="" onclick="chengeImage('two')" id="two">
+                    </li>
+                    <li><img src="../img/caybachtuyetmai3.png" alt="" onclick="chengeImage('three')" id="three">
+                    </li>
+                    <li><img src="../img/caybachtuyetmai4.png" alt="" onclick="chengeImage('four')" id="four">
+                    </li>
+                </ul>
+            </div>
+            <div class="main-imgs">
+                <!-- <img src="../img/caybachtuyetmai1.png" id="spicy-img" alt=""> -->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/caybachtuyetmai1.png" id="spicy-img" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/caybachtuyetmai2.png" id="spicy-img" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/caybachtuyetmai3.png" id="spicy-img" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div id="main-text"></div>
+        </div>
+
+        <div class="information">
+            <h3>Cửa hàng còn sản phẩm này</h3>
+            <p>THÔNG TIN SẢN PHẨM</p>
+            <p>CHÍNH SÁCH ĐỔI TRẢ</p>
+            <p>ƯU ĐÃI MEMBER</p>
+            <i class="bi bi-car-front"> GIAO HÀNG NỘI THÀNH TRONG 24 GIỜ</i> <br>
+            <i class="bi bi-currency-exchange"> ĐỔI HÀNG TRONG 7 NGÀY</i> <br>
+            <i class="bi bi-universal-access"> TỔNG ĐÀI BÁN HÀNG 096728.4444</i>
+
+        </div>
+
+        <div class="information-text">
+            <h2>MÔ TẢ SẢN PHẨM</h2>
+            <span>
+                🍀CHÍNH SÁCH MUA HÀNG: <br>
+                - Bảo hành cây trong vòng 7 ngày tính từ ngày nhận hàng. <br>
+                - Tặng kèm 1 túi sỏi khi mua cây kèm chậu gốm <br>
+                -------------------------------------------------------------------------------------------------- <br>
+                Khách hàng ở Sài Gòn chọn đơn vị vận chuyển HOẢ TỐC sẽ nhận được: - 1 Túi sỏi - 1 túi phân bón - <br>
+                v..v - 2 sticker dán dễ thương - t..t <br>
+                -------------------------------------------------------------------------------------------------- <br>
+                🍀Mô tả: Cây cẩm nhung Fittonia có màu đỏ, trắng, hồng...Cây còn gọi là lá may mắn, dễ sống và dễ <br>
+                chăm sóc. Cây phù hợp làm cây cảnh để bàn, trồng terrarium, tiểu cảnh, trang trí quán cà phê, làm <br>
+                quà tặng... <br>
+                -------------------------------------------------------------------------------------------------- <br>
+                🍀KÍCH THƯỚC: <br>
+                - Cây cao từ 5-10cm <br>
+                - Bán kính: 3cm - 5cm (Đã bao gồm chậu tráng men) <br>
+                -------------------------------------------------------------------------------------------------- <br>
+                🍀CÁCH CHĂM SÓC CẨM NHUNG <br>
+                Có thể nói cẩm nhung Fittonia là lựa chọn tuyệt vời để làm cây để bàn vì có nguồn gốc từ đầm lầy ẩm <br>
+                ướt nên cây ưa mát và chịu được ẩm, có thể sống được trong môi trường máy lạnh, thiếu nắng. <br>
+                -------------------------------------------------------------------------------------------------- <br>
+                🍀Địa chỉ shop: 183/24 Nơ Trang Long, Phường 12, Quận Bình Thạnh T2-CN (Open: 9am-8pm) <br>
+                Hotline: 0968.933.797 hoặc 0389.408.004 <br>
+
+                #cayfittonia #câycẩmnhung #fittonia #camnhung #caymini #caydeban #caynoithat
+            </span>
+        </div>
+
+
+</body>
+<script src="../OOP/details_informat.js"></script>
+<script src="../OOP/cart_oop.js"></script>
+<script src="../js/informat/informat.js"></script>
+<script src="../js/cart/cart.js"></script>
+
+
+<script>
+
+    //right
+    let menuBtns = document.getElementById('menuBtns');
+    let sideNavs = document.getElementById('search');
+    let menus = document.getElementById('menu_right');
+    sideNavs.style.right = "-450px";
+    menuBtns.onclick = function () {
+        if (sideNavs.style.right == "-450px") {
+            sideNavs.style.right = "0";
+            menus.src = "../img/OOjs_UI_icon_close-ltr.svg.png"
+        } else {
+            sideNavs.style.right = "-450px";
+            menus.src = "../img/cart-removebg-preview.png"
+        }
+    }
+
+    // ảnh linh
+    function chengeImage(id) {
+        let img = document.getElementById(id).getAttribute('src')
+        document.getElementById("spicy-img").setAttribute('src', img)
+    }
+</script>
+
+
+</html>

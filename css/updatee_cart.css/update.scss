@@ -203,9 +203,20 @@ h3 {
     float: left;
     border: 0.2px solid gray;
     width: 250px;
-    height: 450px;
+    height: 480px;
     border-radius: $boxshado;
     .main-input {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      input {
+        margin: 10px;
+      }
+      button {
+        margin: 10px;
+      }
+    }
+    .main-inputs {
       display: flex;
       flex-direction: column;
       padding: 20px;
