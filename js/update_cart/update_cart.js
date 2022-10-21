@@ -16,7 +16,7 @@ array.push(cart5)
 array.push(cart6)
 array.push(cart7)
 array.push(cart8)
-localStorage.getItem("list",JSON.stringify(array))
+localStorage.setItem("list",JSON.stringify(array))
 
 // sản phẩm update
 function updateCart(){
