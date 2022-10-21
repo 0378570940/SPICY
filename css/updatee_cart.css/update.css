@@ -270,6 +270,17 @@ h3 {
   color: white;
 }
 
+.logout {
+  position: absolute;
+  top: 100%;
+  left: 90%;
+}
+.logout a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
 @media screen and (max-width: 740px) {
   h3 {
     margin-top: 150px !important;

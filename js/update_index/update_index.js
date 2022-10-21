@@ -7,7 +7,7 @@ function updateIndexs(){
         datas+="<div class='main_img'></div>"
         datas+="<p>"+array[i].name+"</p>"
         datas+="<b>"+array[i].price+" đ"+"</b>"
-        datas+="<div class='main_desc'>"+"<a onclick='editProduct("+i+")'><span></span>Add</a>"+"</div>"
+        datas+="<div class='main_desc'>"+"<a href='../informat/informat.html' onclick='editProduct("+i+")'><span></span>Add</a>"+"</div>"
         datas+="</div>"
     }
     datas+="</div>"
